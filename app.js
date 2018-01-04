@@ -7,7 +7,7 @@ const helmet = require('helmet');
 const bodyParser = require('body-parser');
 
 // Set port number.
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 // Create an express server.
 const app = express();
