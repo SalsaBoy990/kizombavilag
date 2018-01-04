@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="hu">
+<% include partials/head.ejs %>
+<body>
+    <div class="flex-container">
+        
+        <div class="site-header">
+            <% include partials/header.ejs %>
+        </div>
+
+        <div class="wrapper">
+            
+            <div class="post-content">
+                <h1 class="post-title" style="color:#b60f84;"><%= title %></h1>
+                <img class="cover" src="/images/luanda.jpg" alt="Luanda, Angola fővárosa" title="Luanda, Angola fővárosa"/>
+            </div>
+            <% include partials/footer.ejs %>
+        </div>
+    </div>
+    <% include partials/scripts.ejs %>
+</body>
+</html>

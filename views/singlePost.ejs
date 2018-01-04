@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="hu">
+<% include partials/head.ejs %>
+<body>
+    <div class="flex-container">
+        
+        <div class="site-header">
+        <% include partials/header.ejs %>
+        </div>
+
+        <div class="wrapper">
+            
+            <div class="post-content">
+                <article>
+                    <h1 class="post-title"><%= title %></h1>
+
+                    <p class="post-date"><%= date %>, szerző: <span class="author"><%= author %></span></p>
+                    
+                    <!-- post body comes here -->
+                    <% for (var i = 0; i < postBody.length; i++) {%>
+                        <%- postBody[i] %>
+                    <% } %>
+                    
+                </article>
+                <br>
+            </div>
+            <% include partials/footer.ejs %>
+        </div>
+    </div>
+    <% include partials/scripts.ejs %>
+</body>
+</html>

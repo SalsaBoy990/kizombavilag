@@ -1,0 +1,10 @@
+<header>
+    <h1 class="site-title"><a href="/" title="Ugrás a főoldalra">Kizombavilág</a></h1>
+    <ul class="navbar">
+        <% for (var i = 0; i < posts.length; i++) {%>
+        <li>
+            <a href="/cikk/<%= posts[i].id %>"><%= posts[i].title %></a>
+        </li>
+        <% } %>
+    </ul>
+</header>
