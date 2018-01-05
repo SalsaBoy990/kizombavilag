@@ -30,7 +30,7 @@
         "    <li><strong>zouk</strong> (csak zenei stílus, származás: Guadalupe és Martinique),</li>",
         "    <li><strong>kompa</strong> (zene és tánc is egyben, származás: Haiti).</li>",
         "</ul>",
-        "<img class=\"normal\" src=\"/images/kizomba_ernyo-min.png\" alt=\"A Kizomba „ernyő”\"/>",
+        "<img class=\"normal\" src=\"/images/kizomba_ernyo-min.jpg\" alt=\"A Kizomba „ernyő”\"/>",
         "<figcaption>1. ábra: A Kizomba Ernyő</figcaption>",
         "<p>Ezek a zenei stílusok léteztek már a kizomba előtt. Ezeknek a keverékéből jött létre a <strong>kizomba zene</strong>. Attól függően, hogyan keveredtek, különböző stílusok jöttek létre a kizomba zenén belül. Ezek a stílusok egymástól földrajzilag távol eső helyeken: a Francia-Antillákon (Guadalope, Martinique, Haiti), Közép-Afrikában (Angola, Mozambik) és a Zöld-foki Köztársaságban (Cabo Verde) alakultak ki. Például Cabo Verde-ben, mivel nem ismerték a szembát, a kompa és a colideira keveredett a zouk-kal, és így jött létre ott a kizomba zene. Angolában viszont a szemba zenét ötvözték a zouk zenével. Ha nagyon szigorúak akarunk lenni, akkor csak ez utóbbi nevezhető kizomba zenének.</p>",
         "<img class=\"normal\" src=\"/images/kizomba_terkep.jpeg\" alt=\"Térkép: A kizomba zene ezekből az országokból származik\"/>",
@@ -285,8 +285,46 @@
       },
     
     {
-      "title" : "A Kizombavilág építése",
+      "title" : "Miről ismered fel a különböző zene stílusokat a kizombán belül?",
       "position" : "6",
+      "id" : "a_kizomba_zene_felismerese",
+      "date" : "2018-01-05",
+      "author" : "Tvisztandris",
+      "post_body" : [
+        "<h2>Szemba, kizomba, ghetto zouk vagy tarraxinha?</h2>",
+        "<h3>A szemba és a kizomba közti különbség</h3>",
+        "<p>A kizomba és a szemba közti különbség leginkább az, hogy <strong>milyen hangszereket használnak bennük, és nem a zene tempója!</strong> A zenészek a kizombában hajlamosabbak elektronikus hangszereket használni, míg a hagyományos szemba számokban inkább az akusztikusakat részesítik előnyben. Ez az elkülönítés nem egy szigorú szabály, mivel számos modern szemba szám szintén használ elektronikus elemeket, sőt a kizomba is hasonlíthat a szembához a választott hangszerektől függően.</p>",
+        "<p>De hogy tovább nehezítsük az elkülönítést, sok angolai <strong>a kizombát gyűjtőfogalomként használja az összes stílusra</strong> (tarraxa, ghetto zouk, colazouk, kizomba, szemba stb.).</p>",
+        "<p>Általános szabályként az állapítható meg, hogy a <strong>kizomba számokban tipikus a zongora/szintetizátor és a basszusgitár</strong>. A <strong>szemba</strong> esetén pedig a <strong>dikanza</strong> (ütős hangszer), a <strong>batuque</strong> (konga dob) és a <strong>harmonika</strong>.</p>",
+        "<img class=\"normal\" src=\"/images/dikanza.jpg\" alt=\"Dikanza\" title=\"Dikanza\"/>",
+        "<img class=\"normal\" src=\"/images/batuque.jpg\" alt=\"Batukue\" title=\"Batukue\"/>",
+        "<p>A kizomba sokszor élő hangszereket is használ (például dobot, akusztikus gitárt, trombitát, szaxofont stb.) a szemba gyökerei miatt.</p>",
+        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/CAMcW75KdMA\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>",
+        "<figcaption>1. videó: Szemba</figcaption>",
+        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/w84_GGikNpM\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>",
+        "<figcaption>2. videó: Kizomba</figcaption>",
+        "<h3>A tarraxinha</h3>",
+        "<p>A tarraxinhát vagy tarraxát <strong>elektronikus hangzás és kemény basszus</strong> jellemzi pumpáló-lüktető érzést kiváltva. <strong>Teljes egészében szintetikusan</strong> állítják elő dobgéppel, szintetizátorokkal és vokállal. A tarraxinha táncnál <strong>az izolációs csípőmozgásokon</strong> (kifejezetten a nő részéről) és a különböző hullámázásokon van a hangsúly. A lépésekkel csak kis távolságokat tesznek meg. Két tipikus tarraxa előadó Yudi Fox és Badoxa (nem minden számuk tarraxa!).</p>",
+        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/iiwEwbxXN74\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>",
+        "<figcaption>3. videó: Jellegzetes tarraxinha szám</figcaption>",
+        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/q3IAO5suyb8\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>",
+        "<figcaption>4. videó: Jellegzetes tarraxinha szám</figcaption>",
+        "<h3>A ghetto zouk</h3>",
+        "<p>A ghetto zouk hasonlít a tarraxinhára. <strong>Szintén elektronikus</strong> zenék (dobgép + szintetizátor/keyboard), de <strong>erős R&B hatással.</strong> Ennek eredményeképpen <strong>az ének sokkal dallamosabb</strong>, mint a tarraxa esetén. Két tipikus ghetto zouk előadó Kaysha és Nelson Freitas.</p>",
+        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/whH2oDg28-k\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>",
+        "<figcaption>5. videó: Jellegzetes ghetto zouk szám</figcaption>",
+        "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7y2dYhrMWQY\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen></iframe>",
+        "<figcaption>6. videó: Jellegzetes ghetto zouk szám</figcaption>",
+        "<h3>Felhasznált forrás</h3>",
+        "<ul class=\"literature\">",
+        "    <li>AfroLatino Dance Company (2015). <a href=\"http://afrolatinodance.com/2015/08/12/kizomba-as-musical-genre/\">Kizomba as a Musical Genre.</a></li>",
+        "</ul>"
+      ]
+    },
+
+    {
+      "title" : "A Kizombavilág építése",
+      "position" : "7",
       "id" : "a_kizombavilag_epitese",
       "date" : "közeljövő",
       "author" : "Tvisztandris",
@@ -294,5 +332,6 @@
         "<p><em>Készítés alatt. Gyere vissza később!</em></p>",
         "<img class=\"cover\" src=\"/images/under-construction.gif\" title=\"Készítés alatt. Gyere vissza később!\"/>"
       ]
-    }]
-  }
+    }
+  ]
+}

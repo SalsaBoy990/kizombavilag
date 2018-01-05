@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="hu">
+<% include partials/head.ejs %>
+<body>
+    <div class="flex-container">
+        
+        <div class="site-header">
+        <% include partials/header.ejs %>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="post-content">
+              <article>
+                <h1 class="post-title"><%= title %></h1>
+
+                <p class="post-date"><%= date %>, szerző: <span class="author"><%= author %></span></p>
+                  
+                <!-- post body comes here -->
+                <% for (var i = 0; i < 2; i++) {%>
+                <p><%- postBody[i] %></p>
+                <% } %>
+                <form action="#">
+                  <div>
+                    <label for="select">Mi a zene stílusa?</label>
+                    <select id="answer" required>
+                      <option value="">Válassz!</option>
+                      <option value="szemba">Szemba</option>
+                      <option value="kizomba">Kizomba</option>
+                      <option value="ghetto zouk">Ghetto zouk</option>
+                      <option value="tarraxinha">Tarraxinha</option>
+                    </select>
+                  </div>
+                  <button type="submit" onclick="checkAnswer();">Megoldás</button>
+                </form>
+                <p id="solution"></p>
+                <script type = "text/javascript">
+                  // Checks your answers you gave in the 'Recognize the music style' game.
+                  function checkAnswer() {
+                    var answer = document.getElementById("answer");
+                    var songs = <%- JSON.stringify(songs) %>;
+                    var result = document.getElementById("solution");
+                    result.innerHTML = "";
+
+                    if (answer.value === "kizomba") {
+                      /* Append results. */
+                      result.innerHTML += "Helyes válasz";
+                      result.style.color = "green";
+                    } else {
+                      /* Append results. */
+                      result.innerHTML += "<span>Rossz válasz</span>";
+                      result.style.color = "red";
+                    }
+
+                }
+                </script>
+              <br>
+            </div>
+            <% include partials/footer.ejs %>
+        </div>
+    </div>
+    <% include partials/scripts.ejs %>
+</body>
+</html>
