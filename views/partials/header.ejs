@@ -1,10 +1,20 @@
 <header>
-    <h1 class="site-title"><a href="/" title="Ugrás a főoldalra">Kizombavilág</a></h1>
+    <h1 class="site-title"><a href="/" title="Ugrás a főoldalra">Kizombavilág</a></h1> 
     <ul class="navbar">
-        <% for (var i = 0; i < posts.length; i++) {%>
+        <% for (var i = posts.length - 1; i > posts.length - 9; i--) {%>
         <li>
             <a href="/cikk/<%= posts[i].id %>"><%= posts[i].title %></a>
         </li>
         <% } %>
+        <li>
+            <a href="/archivum">Ugrás a korábbi cikkekhez</a>
+        </li>
     </ul>
+    <select class="select-menu" onchange="if (this.value) window.location.href = this.value;">
+        <option value="/">Válassz a menüből!</option>
+        <% for (var i = posts.length - 1; i > posts.length - 9; i--) {%>
+        <option value="/cikk/<%= posts[i].id %>"><%= posts[i].title %></option>
+        <% } %>
+        <option value="/archivum">Ugrás a korábbi cikkekhez</option>
+    </select>
 </header>

@@ -10,50 +10,65 @@
 
         <div class="wrapper">
 
-            <div class="post-content">
-              <article>
-                <h1 class="post-title"><%= title %></h1>
+          <div class="post-content">
+            <article>
+              <h1 class="post-title"><%= title %></h1>
 
-                <p class="post-date"><%= date %>, szerző: <span class="author"><%= author %></span></p>
+              <p class="post-date"><%= date %>, szerző: <span class="author"><%= author %></span></p>
                   
-                <!-- post body comes here -->
-                <% for (var i = 0; i < 2; i++) {%>
-                <p><%- postBody[i] %></p>
-                <% } %>
-                <form action="#">
-                  <div>
+              <!-- post body comes here -->
+              <% for (var i = 0; i < postBody.length; i++) {%>
+              <p><%- postBody[i] %></p>
+              <% } %>
+              
+              <div class="app-container">
+                <% for (var i = 0; i < songList.length; i++) {%>
+                <iframe class="video-margin-top" width="560" height="315" src="<%= songList[i].url%>" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                
+                <div class="user-interface">
+                  <figcaption><%= songList[i].title %></figcaption>
+                  <form action="#">
                     <label for="select">Mi a zene stílusa?</label>
-                    <select id="answer" required>
-                      <option value="">Válassz!</option>
+                    <select id="answer<%= i %>" required>
+                      <option value="nincsValasz">Válassz!</option>
                       <option value="szemba">Szemba</option>
                       <option value="kizomba">Kizomba</option>
                       <option value="ghetto zouk">Ghetto zouk</option>
                       <option value="tarraxinha">Tarraxinha</option>
                     </select>
-                  </div>
-                  <button type="submit" onclick="checkAnswer();">Megoldás</button>
-                </form>
-                <p id="solution"></p>
-                <script type = "text/javascript">
-                  // Checks your answers you gave in the 'Recognize the music style' game.
-                  function checkAnswer() {
-                    var answer = document.getElementById("answer");
-                    var songs = <%- JSON.stringify(songs) %>;
-                    var result = document.getElementById("solution");
+                    <button type="submit" onclick="event.preventDefault(); checkAnswer('answer<%= i %>', 'solution<%= i %>', '<%= i %>');">Megoldás</button>
+                  </form>
+                  <p class="result" id="solution<%= i %>"></p>
+                </div>
+                <% } %>
+              </div>
+              <script type = "text/javascript">
+                // Checks your answers you gave in the 'Recognize the music style' game.
+                function checkAnswer(answer, solution, i) {
+                  // Your get your answer
+                  var yourAnswer = document.getElementById(answer);
+                  // Get the current index and parse it to int
+                  var index = parseInt(i, 10);
+
+                  // Get data from JSON
+                  var songs = <%- JSON.stringify(songList) %>;
+                  // Get the DOM object where I put the solution
+                  var result = document.getElementById(solution);
+                  result.innerHTML = "";
+
+                  if (yourAnswer.value === "nincsValasz") {
                     result.innerHTML = "";
-
-                    if (answer.value === "kizomba") {
-                      /* Append results. */
-                      result.innerHTML += "Helyes válasz";
-                      result.style.color = "green";
-                    } else {
-                      /* Append results. */
-                      result.innerHTML += "<span>Rossz válasz</span>";
-                      result.style.color = "red";
-                    }
-
+                  } else if (yourAnswer.value === songs[index].style) {
+                    /* Append results. */
+                    result.innerHTML += "Helyes válasz. A szám " + songs[index].style + ".";
+                    result.style.color = "green";
+                  } else {
+                    /* Append results. */
+                    result.innerHTML += "Rossz válasz. A szám " + songs[index].style + ".";
+                    result.style.color = "red";
+                  }
                 }
-                </script>
+              </script>
               <br>
             </div>
             <% include partials/footer.ejs %>

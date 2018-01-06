@@ -3,42 +3,41 @@
       "title" : "Játék: Ismerd fel a zeneszámok stílusát!",
       "position" : "0",
       "id" : "zenefelismero_1",
-      "date" : "2018-01-04",
+      "date" : "2018-01-06",
       "author" : "Tvisztandris",
       "post_body": [
         "Szemba, kizomba, ghetto zouk vagy tarraxinha? Az alábbi számokról döntsd el, hogy melyik stílusba tartoznak!",
-        "Mindegyik videó alatt válaszd a megfelelő stílust a listából, majd a végén kattints az Elküld gombra! Segítségként lásd a rövid leírást a stílusokról!",
-        "A kizomba és a szemba közti különbség leginkább az, hogy milyen hangszereket használnak bennük, és nem a zene tempója! A zenészek a kizombában hajlamosabbak elektronikus hangszereket használni, míg a hagyományos szemba számokban inkább az akusztikusakat részesítik előnyben. Ez az elkülönítés nem egy szigorú szabály, mivel számos modern szemba szám szintén használ elektronikus elemeket., sőt a kizomba is hasonlíthat a szembához a választott hangszerektől függően.",
-        "De hogy még megnehezítsük az elkülönítést, sok angolai a kizombát gyűjtőfogalomként használja az összes stílusra (tarraxa, ghetto zouk, colazouk, kizomba, szemba stb.).",
-        "Általános szabályként ez állapítható meg, hogy a kizomba számokban tipikus a zongora/szintetizátor és a basszusgitár. A szemba esetén pedig a dikanza (ütős hangszer), a batuque (konga dob) és a harmonika.",
-        "A kizomba sokszor élő hangszereket is használ (például dobot, akusztikus gitárt, trombitát, szaxofont stb.) a szemba gyökerei miatt.",
-        "A tarraxinhát vagy tarraxát elektronikus hangzás és kemény basszus jellemzi pumpáló-lüktető érzést kiváltva. Teljes egészében szintetikusan állítják elő dobgéppel, szintetizátorokkal és vokállal.A tarraxinha táncnál az izolációs csípőmozgásokon (kifejezetten a nő részéről) és a különböző hullámázásokon van a hangsúly. A lépésekkel csak kis távolságokat tesznek meg. Két tipikus tarraxa előadó Yudi Fox és Badoxa.",
-        "A ghetto zouk hasonlít a tarraxinhára. Szintén elektronikus zenék (dobgép + szintetizátor/keyboard), de erős R&B hatással. Ennek eredményeképpen az ének sokkal dallamosabb, mint a tarraxa esetén. Két tipikus ghetto zouk előadó Kaysha és Nelson Freitas."
+        "Mindegyik videó alatt válaszd ki a megfelelő stílust a listából, majd a végén kattints a Megoldás gombra! Segítségként lásd a <a href=\"/cikk/a_kizomba_zene_felismerese\"> Miről ismered fel a különböző zene stílusokat a kizombán belül?</a> cikket!"
       ],
       "song_list": [
-        { "title": "Nelo Carvalho feat. Jacob Desvarieux - Mamã Falou",
-          "url": "https://www.youtube.com/watch?v=dVOGCzFPF74",
+        { "title": "Dynamo feat. Djodje & Ricky Boy - Princesa",
+          "url": "https://www.youtube.com/embed/GImMBwanNis",
+          "style": "ghetto zouk"
+        },
+        
+        { "title": "Konde - Negra",
+          "url": "https://www.youtube.com/embed/JyY75HWGgHI",
           "style": "kizomba"
         },
 
-        { "title": "Dj Puto X - CTQMK",
-          "url": "https://www.youtube.com/watch?v=r89I_d40dNQ",
-          "style": "tarraxinha"
+        { "title": "Matias Damasio - Sol e Lua",
+          "url": "https://www.youtube.com/embed/2Pa3W-3NUPQ",
+          "style": "kizomba"
         },
 
-        { "title": "Calema - Ciúme",
-          "url": "https://www.youtube.com/watch?v=QJtTgLwfD8Y",
-          "style": "ghetto zouk"
-        },
-
-        { "title": "Matias Damásio- Kwanza Burro",
-          "url": "https://www.youtube.com/watch?v=rQIJOhYI-tg",
+        { "title": "Puto Portugues feat. Ary - Desconfianca",
+          "url": "https://www.youtube.com/embed/IO-qFsjlB0E",
           "style": "szemba"
         },
 
-        { "title": "Rayssa - Fala Só (Resposta)",
-          "url": "https://www.youtube.com/watch?v=dVOGCzFPF74",
+        { "title": "Don Kikas ft. Pérola - Amor de Ninguém",
+          "url": "https://www.youtube.com/embed/fHqPQf9uVzQ",
           "style": "kizomba"
+        },
+
+        { "title": "Gama - Tudo Que Eu Quero",
+          "url": "https://www.youtube.com/embed/f6aCODWroI4",
+          "style": "tarraxinha"
         }
       ]
     }]

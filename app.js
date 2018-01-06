@@ -30,15 +30,16 @@ app.use(helmet());
 app.use(bodyParser.json());
 
 // To serve static files.
-app.use(express.static(path.join(__dirname, 'public'), {
-  maxAge: 86400000
-}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Require utils.js
 const utils = require('./routes/utils');
 
 // an HTTP GET method for the homepage.
 app.get('/', utils.home);
+
+// an HTTP GET method for the archive.
+app.get('/archivum', utils.archive);
 
 // an HTTP GET method for a single blogpost.
 app.get('/cikk/:id', utils.singlePost);

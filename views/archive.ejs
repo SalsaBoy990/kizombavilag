@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="hu">
+<% include partials/head.ejs %>
+<body>
+    <div class="flex-container">
+        
+        <div class="site-header">
+            <% include partials/header.ejs %>
+        </div>
+
+        <div class="wrapper">
+            
+            <div class="post-content">
+              <h1 class="post-title"><%= title %></h1>
+              <br>
+              <% for (var i = posts.length -1 ; i >= 0; i--) {%>    
+              <div>
+                <p class="archive"><a href="/cikk/<%= posts[i].id %>"><%= posts[i].title %></a> (<span class="archive-date"><%= posts[i].date %>)</span></p> 
+              </div>
+              <% } %>
+            <br>
+            </div>
+            <% include partials/footer.ejs %>
+        </div>
+    </div>
+    <% include partials/scripts.ejs %>
+</body>
+</html>

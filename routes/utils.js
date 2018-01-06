@@ -107,7 +107,7 @@ const singleApp = (req, res) => {
       let author = post.author;
       let date = post.date;
       let postBody = post.post_body;
-      let songs = post.song_list;
+      let songList = post.song_list;
       let url = 'app/' + post.id;
 
       // Renders blogpost, sends post-data.
@@ -117,11 +117,25 @@ const singleApp = (req, res) => {
         author: author,
         date: date,
         postBody: postBody,
-        songs: songs,
+        songList: songList,
         url: url,
         currentYear: new Date().getFullYear()
       });
     }
+  });
+};
+
+
+// Callback function for the archive
+const archive = (req, res) => {
+  let posts = postsJSON.posts;
+
+  // Renders homepage.
+  res.render('archive', {
+    title: 'A Kivin eddig megjelent írások listája',
+    currentYear: new Date().getFullYear(),
+    url: '',
+    posts: posts
   });
 };
 
@@ -140,6 +154,7 @@ const notFound = (req, res) => {
 // Export the functions.
 module.exports = {
   home: home,
+  archive: archive,
   singlePost: singlePost,
   singleApp: singleApp,
   notFound: notFound
