@@ -334,7 +334,8 @@
       "date" : "2018-01-06",
       "author" : "Tvisztandris",
       "post_body" : [
-        "<p><a href=\"/app/zenefelismero_1\">Az első felvonás</a></p>"
+        "<p><a href=\"/app/zenefelismero_1\">Az első felvonás</a></p>",
+        "<p><a href=\"/app/zenefelismero_2\">A második felvonás</a></p>"
       ]
     }
   ]

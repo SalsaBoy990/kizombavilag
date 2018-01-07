@@ -1,5 +1,6 @@
 {
-    "musics": [{
+    "musics": [
+    {
       "title" : "Játék: Ismerd fel a zeneszámok stílusát!",
       "position" : "0",
       "id" : "zenefelismero_1",
@@ -7,38 +8,102 @@
       "author" : "Tvisztandris",
       "post_body": [
         "Szemba, kizomba, ghetto zouk vagy tarraxinha? Az alábbi számokról döntsd el, hogy melyik stílusba tartoznak!",
-        "Mindegyik videó alatt válaszd ki a megfelelő stílust a listából, majd a végén kattints a Megoldás gombra! Segítségként lásd a <a href=\"/cikk/a_kizomba_zene_felismerese\"> Miről ismered fel a különböző zene stílusokat a kizombán belül?</a> cikket!"
+        "Mindegyik videó alatt válaszd ki a megfelelő stílust a listából, majd kattints a Megoldás gombra! Segítségként lásd a <a href=\"/cikk/a_kizomba_zene_felismerese\"> Miről ismered fel a különböző zene stílusokat a kizombán belül?</a> cikket!"
       ],
       "song_list": [
-        { "title": "Dynamo feat. Djodje & Ricky Boy - Princesa",
+        {
+          "title": "Dynamo feat. Djodje & Ricky Boy - Princesa",
           "url": "https://www.youtube.com/embed/GImMBwanNis",
           "style": "ghetto zouk"
         },
         
-        { "title": "Konde - Negra",
+        {
+          "title": "Konde - Negra",
           "url": "https://www.youtube.com/embed/JyY75HWGgHI",
           "style": "kizomba"
         },
 
-        { "title": "Matias Damasio - Sol e Lua",
+        {
+          "title": "Matias Damasio - Sol e Lua",
           "url": "https://www.youtube.com/embed/2Pa3W-3NUPQ",
           "style": "kizomba"
         },
 
-        { "title": "Puto Portugues feat. Ary - Desconfianca",
+        {
+          "title": "Puto Portugues feat. Ary - Desconfianca",
           "url": "https://www.youtube.com/embed/IO-qFsjlB0E",
           "style": "szemba"
         },
 
-        { "title": "Don Kikas ft. Pérola - Amor de Ninguém",
+        {
+          "title": "Don Kikas ft. Pérola - Amor de Ninguém",
           "url": "https://www.youtube.com/embed/fHqPQf9uVzQ",
           "style": "kizomba"
         },
 
-        { "title": "Gama - Tudo Que Eu Quero",
+        {
+          "title": "Gama - Tudo Que Eu Quero",
           "url": "https://www.youtube.com/embed/f6aCODWroI4",
           "style": "tarraxinha"
         }
       ]
-    }]
-  }
+    },
+
+    {
+      "title" : "Játék: Ismerd fel a zeneszámok stílusát! 2. rész.",
+      "position" : "1",
+      "id" : "zenefelismero_2",
+      "date" : "2018-01-07",
+      "author" : "Tvisztandris",
+      "post_body": [
+        "Szemba, kizomba, ghetto zouk vagy tarraxinha? Az alábbi számokról döntsd el, hogy melyik stílusba tartoznak!",
+        "Mindegyik videó alatt válaszd ki a megfelelő stílust a listából, majd kattints a Megoldás gombra! Segítségként lásd a <a href=\"/cikk/a_kizomba_zene_felismerese\"> Miről ismered fel a különböző zene stílusokat a kizombán belül?</a> cikket!"
+      ],
+      "song_list": [
+        {
+          "title": "Edgar Domingos - Toca No Meu",
+          "url": "https://www.youtube.com/embed/sltYkq9ynZU",
+          "style": "tarraxinha"
+        },
+
+        {
+          "title": "Filho Do Zua - Ndoki",
+          "url": "https://www.youtube.com/embed/bnyUOSg57PA",
+          "style": "kizomba"
+        },
+
+        {
+          "title": "Gerilson Insrael feat. Landrick - Vir Com Tudo",
+          "url": "https://www.youtube.com/embed/1n2NzOUFnzg",
+          "style": "ghetto zouk"
+        },
+
+        {
+          "title": "Adi Cudz - Maria do B.O",
+          "url": "https://www.youtube.com/embed/td8zGQbAAF0",
+          "style": "ghetto zouk"
+        },
+
+        
+
+        {
+          "title": "Nelo Carvalho feat. Jacob Desvarieux - Mamã Falou",
+          "url": "https://www.youtube.com/embed/dVOGCzFPF74",
+          "style": "kizomba"
+        },
+
+        {
+          "title": "Paulo Flores - Recolher Obrigatorio",
+          "url": "https://www.youtube.com/embed/ynepGXoVbr0",
+          "style": "szemba"
+        },
+
+        {
+          "title": "Elji Beatzkilla - Nha Bubista",
+          "url": "https://www.youtube.com/embed/USOWVQTer1M",
+          "style": "kizomba"
+        }
+      ]
+    }
+  ]
+}
