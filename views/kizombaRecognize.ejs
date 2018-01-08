@@ -23,7 +23,7 @@
               
               <div class="app-container">
                 <% for (var i = 0; i < songList.length; i++) {%>
-                <iframe class="video-margin-top" width="560" height="315" src="<%= songList[i].url%>" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                <iframe sandbox="allow-scripts allow-same-origin" class="video-margin-top" width="560" height="315" src="<%= songList[i].url%>" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 
                 <div class="user-interface">
                   <figcaption><%= songList[i].title %></figcaption>
