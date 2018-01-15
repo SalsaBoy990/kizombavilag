@@ -2,13 +2,11 @@
 const postsJSON = require('../blogposts.json');
 const musicsJSON = require('../musics.json');
 
-
 /* This function gets the post data from our JSON 'database',
  * renders post template if the post found by its unique id,
  * and if post is nonexistent, an error page will render.
  */
 const getPostById = (uniqueId, data, callback) => {
-
   // Return true if post id (path) is correct / exists
   const findPost = (post) => {
     return post.id === uniqueId;
@@ -45,6 +43,7 @@ const singlePost = (req, res) => {
   // Gets the user supplied id from request body.
   let uniqueId = req.params.id;
   let posts = postsJSON.posts;
+
   /* This function gets the post data from JSON 'database',
   * renders post template if the post found by its unique id,
   * and if post is nonexistent, an error page will render. */
@@ -108,6 +107,7 @@ const singleApp = (req, res) => {
       let date = post.date;
       let postBody = post.post_body;
       let songList = post.song_list;
+      let max = post.song_list.length;
       let url = 'app/' + post.id;
 
       // Renders blogpost, sends post-data.
@@ -118,13 +118,13 @@ const singleApp = (req, res) => {
         date: date,
         postBody: postBody,
         songList: songList,
+        max: max,
         url: url,
         currentYear: new Date().getFullYear()
       });
     }
   });
 };
-
 
 // Callback function for the archive
 const archive = (req, res) => {
@@ -149,7 +149,6 @@ const notFound = (req, res) => {
     title: 'Nem ezt az oldalt keresed.'
   });
 };
-
 
 // Export the functions.
 module.exports = {

@@ -10,7 +10,7 @@
             <a href="/archivum">Ugrás a korábbi cikkekhez</a>
         </li>
     </ul>
-    <select class="select-menu" onchange="if (this.value) window.location.href = this.value;">
+    <select class="select-menu" id="select-menu">
         <option value="/">Válassz a menüből!</option>
         <% for (var i = posts.length - 1; i > posts.length - 9; i--) {%>
         <option value="/cikk/<%= posts[i].id %>"><%= posts[i].title %></option>

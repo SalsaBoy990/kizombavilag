@@ -15,7 +15,7 @@
               <h1 class="post-title"><%= title %></h1>
 
               <p class="post-date"><%= date %>, szerző: <span class="author"><%= author %></span></p>
-                  
+              
               <!-- post body comes here -->
               <% for (var i = 0; i < postBody.length; i++) {%>
               <p><%- postBody[i] %></p>
@@ -36,44 +36,17 @@
                       <option value="ghetto zouk">Ghetto zouk</option>
                       <option value="tarraxinha">Tarraxinha</option>
                     </select>
-                    <button type="submit" onclick="event.preventDefault(); checkAnswer('answer<%= i %>', 'solution<%= i %>', '<%= i %>');">Megoldás</button>
+                    <button id="button<%= i %>" data-max="<%= max %>" type="submit" data-index="<%= i %>" data-ans="answer<%= i %>" data-sol="solution<%= i %>" data-some='<%= JSON.stringify(songList) %>'>Megoldás</button>
                   </form>
                   <p class="result" id="solution<%= i %>"></p>
                 </div>
                 <% } %>
               </div>
-              <script type = "text/javascript">
-                // Checks your answers you gave in the 'Recognize the music style' game.
-                function checkAnswer(answer, solution, i) {
-                  // Your get your answer
-                  var yourAnswer = document.getElementById(answer);
-                  // Get the current index and parse it to int
-                  var index = parseInt(i, 10);
-
-                  // Get data from JSON
-                  var songs = <%- JSON.stringify(songList) %>;
-                  // Get the DOM object where I put the solution
-                  var result = document.getElementById(solution);
-                  result.innerHTML = "";
-
-                  if (yourAnswer.value === "nincsValasz") {
-                    result.innerHTML = "";
-                  } else if (yourAnswer.value === songs[index].style) {
-                    /* Append results. */
-                    result.innerHTML += "Helyes válasz. A szám " + songs[index].style + ".";
-                    result.style.color = "green";
-                  } else {
-                    /* Append results. */
-                    result.innerHTML += "Rossz válasz. A szám " + songs[index].style + ".";
-                    result.style.color = "red";
-                  }
-                }
-              </script>
+              <script type = "text/javascript" src="/javascripts/answerChecker.js"></script>
               <br>
             </div>
             <% include partials/footer.ejs %>
         </div>
     </div>
-    <% include partials/scripts.ejs %>
 </body>
 </html>
