@@ -84,8 +84,6 @@
           "style": "ghetto zouk"
         },
 
-        
-
         {
           "title": "Nelo Carvalho feat. Jacob Desvarieux - Mamã Falou",
           "url": "https://www.youtube.com/embed/dVOGCzFPF74",
@@ -103,6 +101,68 @@
           "url": "https://www.youtube.com/embed/USOWVQTer1M",
           "style": "kizomba"
         }
+      ]
+    },
+
+    {
+      "title" : "Játék: Ismerd fel a zeneszámok stílusát! 3. rész.",
+      "position" : "2",
+      "id" : "zenefelismero_3",
+      "date" : "2018-01-19",
+      "author" : "Tvisztandris",
+      "post_body": [
+        "Szemba, kizomba, ghetto zouk vagy tarraxinha? Az alábbi számokról döntsd el, hogy melyik stílusba tartoznak!",
+        "Mindegyik videó alatt válaszd ki a megfelelő stílust a listából, majd kattints a Megoldás gombra! Segítségként lásd a <a href=\"/cikk/a_kizomba_zene_felismerese\"> Miről ismered fel a különböző zene stílusokat a kizombán belül?</a> cikket!"
+      ],
+      "song_list": [
+        {
+          "title": "Badoxa - Baile",
+          "url": "https://www.youtube-nocookie.com/embed/yVLVsDoat8Q?rel=0",
+          "style": "ghetto zouk"
+        },
+
+        {
+          "title": "Yasmine feat. Badoxa - Perfume",
+          "url": "https://www.youtube-nocookie.com/embed/OFB8fkbrxjk?rel=0",
+          "style": "ghetto zouk"
+        },
+
+        {
+          "title": "Matias Damásio feat. Calabeto - Bomba",
+          "url": "https://www.youtube-nocookie.com/embed/HkuWpni56s8?rel=0",
+          "style": "szemba"
+        },
+
+        {
+          "title": "Eduardo Paim - Como Ela Só Tem Ela",
+          "url": "https://www.youtube-nocookie.com/embed/e3xD5NIvGbE?rel=0",
+          "style": "kizomba"
+        },
+
+        {
+          "title": "Eddy Tussa - Soba",
+          "url": "https://www.youtube-nocookie.com/embed/qIXGH1AKJQw?rel=0",
+          "style": "szemba"
+        },
+
+        {
+          "title": "Abuchamo Munhoto - Kizopandza",
+          "url": "https://www.youtube-nocookie.com/embed/wLIw8SHFPi4?rel=0",
+          "style": "tarraxinha"
+        },
+
+        {
+          "title": "DJ Pausas Feat. Daddy Killa, Mkl & Deejay F - Caramelo",
+          "url": "https://www.youtube-nocookie.com/embed/6jTgoTkmQKc?rel=0",
+          "style": "ghetto zouk"
+        },
+
+        {
+          "title": "Garry - Anjo",
+          "url": "https://www.youtube-nocookie.com/embed/Y0mf1YVIgag?rel=0",
+          "style": "ghetto zouk"
+        }
+
       ]
     }
   ]

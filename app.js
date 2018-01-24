@@ -31,10 +31,10 @@ app.use(helmet());
 app.use(csp({
   directives: {
     defaultSrc: [`'self'`],
-    styleSrc: [`'self'`, 'https://fonts.googleapis.com', 'https://www.youtube.com'],
+    styleSrc: [`'self'`, 'https://fonts.googleapis.com', 'https://www.youtube-nocookie.com', 'https://www.youtube.com'],
     fontSrc: [`'self'`, 'https://fonts.gstatic.com/'],
-    scriptSrc: [`'self'`, 'https://www.youtube.com', 'https://www.googletagmanager.com', 'https://www.google-analytics.com'],
-    childSrc: [`'self'`, 'https://www.youtube.com'],
+    scriptSrc: [`'self'`, 'https://www.youtube-nocookie.com', 'https://www.youtube.com', 'https://www.googletagmanager.com', 'https://www.google-analytics.com'],
+    childSrc: [`'self'`, 'https://www.youtube-nocookie.com', 'https://www.youtube.com'],
     imgSrc: [`'self'`, 'www.google-analytics.com'],
     objectSrc: [`'self'`],
     connectSrc: [`'self'`]
