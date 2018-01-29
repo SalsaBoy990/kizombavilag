@@ -132,7 +132,7 @@ const archive = (req, res) => {
 
   // Renders homepage.
   res.render('archive', {
-    title: 'A Kivin eddig megjelent írások listája',
+    title: 'A Kivin korábban megjelent írások listája',
     currentYear: new Date().getFullYear(),
     url: '',
     posts: posts
