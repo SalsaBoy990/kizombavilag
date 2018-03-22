@@ -92,7 +92,13 @@ iframe {
   display: block;
   width: 97.5%;
   margin: auto;
+  margin-top: 2rem;
   padding: 0;
+}
+
+.vimeo-video {
+  width: 640px;
+  height: 320px;
 }
 
 img {
@@ -148,7 +154,7 @@ button {
 }
 
 video-margin-top {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .user-interface {
@@ -166,21 +172,8 @@ video-margin-top {
    ++++++++++++++++ 
 */
 
-
-
-.cc-img {
-  height: 31px;
-  width: 88px;
-  margin: auto;
-}
-.cc-text {
-  text-indent: none;
-  text-align: center;
-  font-size: 0.6rem;
-}
-
-
 .footer {
+  margin-top: 2rem;
   font-size: .6rem;
   color: #111;
   text-align: center;
@@ -283,8 +276,8 @@ video-margin-top {
 
 .cover {
   padding: 1.25% 0;
-  -webkit-filter: sepia(50%); /* Safari */
-  filter: sepia(50%);
+  -webkit-filter: sepia(25%); /* Safari */
+  filter: sepia(25%);
   width: 50%
 }
 
@@ -301,7 +294,7 @@ video-margin-top {
 .site-header a{
   color: #8F78AD;
   padding: 0.4rem;
-  font-size: .85rem;
+  font-size: .7rem;
   text-decoration: none;
   font-weight: 700;
   text-decoration: none;
@@ -406,12 +399,13 @@ video-margin-top {
 
 /* REDUCES FONT-SIZES, PADDINGS, AND MARGINS FOR SMALL SCREENS */
 @media only screen and (max-width: 600px) {
-  body {
-      font-size: .9rem;
+  html {
+    font-size: 18px;
   }
 
-  .right-p {
-    font-size: .75rem;
+  .vimeo-video {
+    width: 512px;
+    height: 256px;
   }
 
   .cover, .normal {
@@ -425,22 +419,6 @@ video-margin-top {
 
   h2, h3, h4, h5, h6 {
     padding-left: 1rem;
-  }
-
-  figcaption, figcaption a {
-    font-size: .8rem;
-  }
-
-  .post-title {
-    font-size: 2rem;
-  }
-
-  .literature, .post-date {
-      font-size: 0.7rem;
-  }
-
-  .site-header a {
-      font-size: .8rem;
   }
 
   .site-header header ul li {
@@ -463,34 +441,26 @@ video-margin-top {
   }
 }
 
+@media only screen and (max-width: 510px) {
+  .vimeo-video {
+    width: 400px;
+    height: 200px;
+  }
+}
+
 
 /* REDUCES FONT-SIZES FOR MINIMAL SCREEN WIDTHS */
 @media only screen and (max-width: 370px) {
-  body {
-      font-size: .8rem;
+  html {
+    font-size: 16px;
   }
 
-  .right-p {
-    font-size: .65rem;
+  .vimeo-video {
+    width: 320px;
+    height: 180px;
   }
 
   .cover, .normal {
     width: 90%;
-  }
-
-  .literature, .post-date {
-      font-size: 0.6rem;
-  }
-
-  figcaption, figcaption a {
-      font-size: .7rem;
-  }
-
-  .cc-text {
-    font-size: 0.5rem;
-  }
-
-  .footer {
-    font-size: 0.5rem;
   }
 }
