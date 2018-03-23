@@ -19,7 +19,8 @@
   "scripts": {
     "test": "standard",
     "start": "node app.js",
-    "fix": "standard --fix"
+    "fix": "standard --fix",
+    "auto": "nodemon app.js"
   },
   "author": "András Gulácsi",
   "license": "ISC"

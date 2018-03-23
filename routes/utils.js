@@ -54,7 +54,7 @@ const singlePost = (req, res) => {
         posts: posts,
         currentYear: new Date().getFullYear(),
         url: '',
-        title: 'A megadott címen nem található blogbejegyzés!'
+        title: '404 - A megadott címen nem található blogbejegyzés!'
       })
     } else {
       // Set variables that are returned to the browser.
@@ -98,7 +98,7 @@ const singleApp = (req, res) => {
         posts: posts,
         currentYear: new Date().getFullYear(),
         url: '',
-        title: 'A megadott címen nem található alkalmazás!'
+        title: '404 - A megadott címen nem található alkalmazás!'
       })
     } else {
       // Set variables that are returned to the browser.
@@ -146,7 +146,7 @@ const notFound = (req, res) => {
     posts: posts,
     currentYear: new Date().getFullYear(),
     url: '',
-    title: 'Nem ezt az oldalt keresed.'
+    title: '404 - Ezen a címen nem található semmilyen cikk.'
   })
 }
 
